@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    
+    html,
+    body {
+       margin:0;
+       padding:0;
+       height:80%;
+    }
+    #container {
+       min-height:80%;
+       position:relative;
+    }
+    #header {
+       background:#e8edee;
+       padding:10px;
+    }
+    #body {
+       padding:10px;
+       padding-bottom:30px;   /* Height of the footer */
+    }
+    #footer {
+       position:absolute;
+       bottom:-5;
+       width:100%;
+       height:30px;   /* Height of the footer */
+       background:#e8edee;
+    }
+    .marge { margin: 5px 5px 3px 5px;}
+    
+
+    </style>
+  </head>
+  <body>
+  <div id="header">
+		<!-- Header start -->
+		<h1>StarCraft II Leagues Predictor </h1>
+		<p>
+		This is part of the Python for Data Analysis Course. 		
+		<br>
+		The predictions are obtained thanks to a Logistic regression model trained on the
+		<a href="https://archive.ics.uci.edu/ml/datasets/SkillCraft1+Master+Table+Dataset#">SkillCraft Dataset.</a>
+		</p>
+		<!-- Header end -->
+  </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <hr class="mt-0 mb-4">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+            <div class="container text-center">
+              <small>ESILV - Juliette Barthet</small>
+            </div>
+        </footer>
+  </body>
+</html>
+    

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h4>
+    Get your stats and fill the following form in to get a prediction on your Starcraft II league!
+    </h4>
+    <br>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ formset.as_p }}
+
+        <input type="submit" value="Predict my league">
+    </form>
+{% endblock %}
