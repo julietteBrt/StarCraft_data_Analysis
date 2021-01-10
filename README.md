@@ -24,3 +24,15 @@ Online players are distributed into 7 leagues according to their level.
 Our study of the SkillCraft1 dataset led to the implementation of a logistic regression classifier. We tuned its parameters thanks to grid searching and got an accuracy of 49 % when a simple decision tree only had a 42 % accuracy.
 Also, by using principal components analysis and ANOVA testing, we were able to identify the most influential features when it comes to predicting a league. These results are useful to modify the game's AI to better simulate a human player. They also provide information to gamers to evaluate their level, identify their strength and weaknesses so that they can improve.
 
+
+## Running the API
+
+To run the API once you've downloaded the project,
+
+```
+$ cd StarCraft_data_Analysis-main/skc_web
+$ pip install -r requirements.txt
+$ py manage.py runserver
+```
+
+Then go to the running server: http://127.0.0.1:8000/
